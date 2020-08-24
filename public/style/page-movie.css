@@ -1,0 +1,84 @@
+.page-movie {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card .title {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: #dadada;
+
+    height: 40px;
+    align-items: center;
+}
+
+.card .title h2 {
+    padding-left: 2.4rem;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+
+    color: var(--color-blue-tittle);
+}
+
+.card .title p {
+    padding-right: 1.2rem;
+
+    text-align: end;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+
+    color: #9c9c9c;
+}
+
+.text-movie {
+    padding-top: 2.4rem;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    background-color: #d4d4d45b;
+}
+
+.information fieldset {
+    border: none;
+    padding: 1.2rem 2.4rem;
+
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+
+    color: var(--color-blue-tittle);
+}
+
+.information legend {
+    border-bottom: 1px solid var(--color-ligth-blue);
+    width: 100%;
+}
+
+.information fieldset p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+
+    color: black;
+
+}
+
+.information .movie-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.information fieldset + fieldset {
+    margin-top: 2rem;
+}    
