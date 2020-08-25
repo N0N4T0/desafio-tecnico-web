@@ -43,12 +43,13 @@
 
 .information {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 175px;
 
     background-color: #d4d4d45b;
 }
 
-.information fieldset {
+.information fieldset,
+.values fieldset {
     border: none;
     padding: 1.2rem 2.4rem;
 
@@ -59,7 +60,8 @@
     color: var(--color-blue-tittle);
 }
 
-.information legend {
+.information legend,
+.values legend {
     border-bottom: 1px solid var(--color-ligth-blue);
     width: 100%;
 }
@@ -70,15 +72,98 @@
     font-family: 'Lato', sans-serif;
 
     color: black;
-
 }
 
 .information .movie-image{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 50vh;
 }
 
-.information fieldset + fieldset {
-    margin-top: 2rem;
-}    
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding-left: 1.4rem;
+
+    gap: 1rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+}
+
+.features h3 {
+    font-size: 1.4rem;
+    color: var(--color-blue-tittle);
+}
+
+.features p {
+    font-size: 1.2rem;
+}
+
+.category {
+    height: auto;
+    padding: 2rem 0 2rem 5px;
+}
+
+.category span {
+    background-color: var(--color-white);
+    color: var(--color-blue-tittle);
+    border: 1px solid var(--color-blue-tittle);
+
+    padding: 0.2rem 0.8rem;
+
+    border-radius: 2.8rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+}
+
+.category .percent {
+    margin: 20px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue-tittle);
+    
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+
+.category .percent-light-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-ligth-blue);
+    border-radius: 50%;
+        
+    width: 8rem;
+    height: 8rem;
+}
+
+.category .percent-light-blue > div {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blue-tittle);
+    
+    border-radius: 50%;
+
+    width: 6rem;
+    height: 6rem;
+}
+
+.category .percent p {
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-ligth-blue);
+    margin: 0 auto;
+}
+
+
+iframe {
+    margin-top: 30px;
+    width: 100%;
+    height: 65vh;
+}
