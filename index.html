@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/public/style/header.css">
     <link rel="stylesheet" href="/public/style/page-index.css">
 
-
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -21,14 +20,19 @@
     <div class="page-index container">
         <div class="search">
             <nav>
-                <input
+                <form id="formulario">
+                    <input
                     type="text"
+                    id="campo"
                     placeholder="Busque um filme por nome, ano ou gênero..."
-                >
+                    >
+                    <!-- <input type="submit" value="Enviar"> -->
+                </form>
             </nav>
         </div>
 
         <div class="cards">
+           
             <a href="/page-movie.html">
                 <div class="card">
                     <section
@@ -59,12 +63,15 @@
                     </div>
                 </div>
             </a>
-
         </div>
+
+        
     </div>
 
     <footer>
         
     </footer>
+
+    <script src="/public/scripts/script.js"></script>
 </body>
 </html>

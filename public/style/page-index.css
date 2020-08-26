@@ -55,7 +55,7 @@
     background-repeat: no-repeat;
 }
 
-.movie-informations .title{
+.movie-informations {
     position: relative;
 }
 
@@ -73,11 +73,11 @@
     background-color: var(--color-blue-tittle);
     color: var(--color-ligth-blue);
 
-    padding-left: 6rem;
+    padding-left: 8rem;
 }
 
 .movie-informations .percent {
-    margin: 20px auto 0;
+    margin: 0 0 0 20px;
 
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@
     width: 5rem;
     height: 5rem;
 
-    top: 23%;
+    top: 4%;
 
     position: absolute;
 }
@@ -125,7 +125,7 @@
 
 .movie-informations .date {
     padding-top: 0.3rem;
-    padding-left: 6rem;
+    padding-left: 8rem;
 
     font-size: 1.2rem;
     font-weight: normal;
@@ -161,4 +161,17 @@
     font-weight: normal;
     font-family: 'Lato', sans-serif;
 
+}
+
+
+
+
+@media(min-width: 870px) {
+    :root {
+        font-size: 80%;
+    }
+
+    .card {
+        grid-template-columns: 246px auto;
+    }   
 }
