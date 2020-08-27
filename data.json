@@ -11,8 +11,37 @@
                 "Ação",
                 "Aventura",
                 "Ficção"
-            ]
+            ],
+            "situation": "Lançado",
+            "language": "Inglês",
+            "duration": "2h 10min",
+            "estimatedValue": "180.000.000,00",
+            "incomeValue": "853.977.000,00",
+            "profitValue": "673.977.000,00",
+            "video":"UvNnqWLruXA"
+        }, 
 
+        {
+            "id":2,
+            "image": "https://upload.wikimedia.org/wikipedia/pt/f/fc/P%C3%B4ster_Wonder_Woman.jpg",
+            "title": "Mulher Maravilha",
+            "date": "01/06/2017",
+            "percent": "78",
+            "text": "Treinada desde cedo para ser uma guerreira imbatível, Diana Prince nunca saiu da paradisíaca ilha em que é reconhecida como princesa das Amazonas. Quando o piloto Steve Trevor se acidenta e cai em uma praia do local, ela descobre que uma guerra sem precedentes está se espalhando pelo mundo e decide deixar seu lar certa de que pode parar o conflito. Lutando para acabar com todas as lutas, Diana percebe o alcance de seus poderes e sua verdadeira missão na Terra.",
+            "areas": [
+                "Ação",
+                "Aventura",
+                "Ficção",
+                "Fantasia",
+                "Guerra"
+            ],
+            "situation": "Lançado",
+            "language": "Inglês",
+            "duration": "2h 10min",
+            "estimatedValue": "230.000.000,00",
+            "incomeValue": "900.977.000,00",
+            "profitValue": "670.977.000,00",
+            "video":"tqfOtQ5auBA"
         }
     ]
 }

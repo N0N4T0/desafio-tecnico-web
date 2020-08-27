@@ -34,11 +34,12 @@
         <div class="cards">
 
            {% for movie in movies %}
-            <a href="/page-movie">
-                <div class="card">
+            <a href="/page-movie/{{movie.id}}">
+                <div class="card" id={{movie.id}}>
                     <section
                         class="movie-image"
                         style="background-image: url({{movie.image}})"
+                        alt="Imagem de {{movie.title}}"
                     ></section>
                     <div class="movie-informations">
                         <div class="title">
@@ -55,7 +56,7 @@
                             </div>
                         </div>
                         <div class="text">
-                            {{movie.text}}
+                            <p>{{movie.text}}</p>
                         </div> 
                         <div class="areas">
                             {% for area in movie.areas %}

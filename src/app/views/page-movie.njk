@@ -20,10 +20,12 @@
 
         <div class="page-movie container">
             <div class="cards">
-                <div class="card">
+                
+
+                <div class="card" id={{movie.id}}>
                     <div class="title">
-                        <h2>Thor: Ragnarok</h2>
-                        <p>22/10/2020</p> 
+                        <h2>{{movie.title}}</h2>
+                        <p>{{movie.date}}</p> 
                     </div>
                     
                     <div class="information">
@@ -33,7 +35,7 @@
                                     Sinopse
                                 </legend>
 
-                                <p>Após anos afastado, Thor retorna para casa e descobre que seu pai Odin, rei de Asgard, está desaparecido. Após encontra-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em Sakaar, um planeta do outro lado do universo. Agora, ele precisa correr contra o tempo para voltar a Asgard e impedir o Ragnarok, a destruição de seu mundo.</p>
+                                <p>{{movie.text}}</p>
                             </fieldset>
                             
                             
@@ -49,46 +51,46 @@
                                 <div class="features">
                                     <div>
                                         <h3>Situação</h3>
-                                        <p>Lançado</p>
+                                        <p>{{movie.situation}}</p>
                                     </div>
             
                                     <div>
                                         <h3>Idioma</h3>
-                                        <p>Inglês</p>
+                                        <p>{{movie.language}}</p>
                                     </div>
             
                                     <div>
                                         <h3>Duração</h3>
-                                        <p>2h 10min</p>
+                                        <p>{{movie.duration}}</p>
                                     </div>
             
                                     <div>
                                         <h3>Orçamento</h3>
-                                        <p>$180.000.000,00</p>
+                                        <p>${{movie.estimatedValue}}</p>
                                     </div>
             
                                     <div>
                                         <h3>Receita</h3>
-                                        <p>$853.977.000,00</p>
+                                        <p>${{movie.incomeValue}}</p>
                                     </div>
             
                                     <div>
                                         <h3>Lucro</h3>
-                                        <p>$673.977.000,00</p>
+                                        <p>${{movie.profitValue}}</p>
                                     </div>
                                 </div>
                             </div>                   
                             
                             <div class="category">
-                                <span>Ação</span>
-                                <span>Aventura</span>
-                                <span>Ficção</span>
+                                {% for area in movie.areas %}
+                                    <span>{{area}}</span>
+                                {% endfor %}
 
         
                                 <div class="percent">
                                     <div class="percent-light-blue">
                                         <div>
-                                            <p>50%</p>
+                                            <p>{{movie.percent}}%</p>
                                         </div>
                                     </div>
                                 </div>
@@ -96,18 +98,18 @@
                         </div>
 
                         <div
-                        class="movie-image"
-                        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9Ql3T-MXK5X_x2lHdNB4lmB0XC_zFHTCtcIT6YwGbXgrNdbT)"
+                            class="movie-image"
+                            style="background-image: url({{movie.image}})"
+                            alt="Imagem de {{movie.title}}"
                         ></div>
                     </div>
                     
 
                 </div>
 
-                <div class="card-video">
+                <div class="card-video" id="{{movies.id}}">
                     <iframe
-                        src="https://www.youtube.com/embed/UvNnqWLruXA" 
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        src="https://www.youtube.com/embed/{{movie.video}}" frameborder="0" allowfullscreen>
                     </iframe>
                 </div>
 

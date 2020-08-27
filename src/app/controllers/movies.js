@@ -6,6 +6,18 @@ module.exports = {
     },
 
     pageMovie(req, res){
-        return res.render("page-movie.njk")
+        const id = req.params.id
+        const movies = data.movies
+
+        const movie = movies.find(function(movie){
+            return movie.id == id
+        })
+
+        if (!movie) {
+            return res.send('Movie not found!')
+        }
+        
+
+        return res.render("page-movie.njk", { movie })
     }
 }
