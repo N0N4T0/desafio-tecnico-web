@@ -1,5 +1,12 @@
 # Desafio técnico web - processo seletivo da [Cubos](https://cubos.io)
 
+## INSTRUÇÕES
+1. Baixe o projeto
+2. Pelo Visual Studo Code ou terminal, va até a pasta do projeto
+3. Execute "npm install" para realizar o donwload de todas as dependências
+5. Execute "npm start". Project will start at "localhost:5000"
+
+
 ## Objetivo
 
 Implementar um web app responsivo que consuma a [API do The Movie DB](https://www.themoviedb.org/documentation/api) e permita buscar e ver detalhes de filmes de seu catálogo.
