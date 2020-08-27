@@ -1,0 +1,32 @@
+{
+  "name": "desafio-tecnico-web",
+  "version": "1.0.0",
+  "description": "## Objetivo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N0N4T0/desafio-tecnico-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N0N4T0/desafio-tecnico-web/issues"
+  },
+  "homepage": "https://github.com/N0N4T0/desafio-tecnico-web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Finder</title>
 
-    <link rel="stylesheet" href="/public/style/main.css">
-    <link rel="stylesheet" href="/public/style/header.css">
-    <link rel="stylesheet" href="/public/style/page-index.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/page-index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
@@ -32,37 +32,41 @@
         </div>
 
         <div class="cards">
-           
-            <a href="/page-movie.html">
+
+           {% for movie in movies %}
+            <a href="/page-movie">
                 <div class="card">
                     <section
                         class="movie-image"
-                        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9Ql3T-MXK5X_x2lHdNB4lmB0XC_zFHTCtcIT6YwGbXgrNdbT)"
+                        style="background-image: url({{movie.image}})"
                     ></section>
                     <div class="movie-informations">
                         <div class="title">
-                           <h2>Thor: Ragnarok</h2> 
+                           <h2>{{movie.title}}</h2> 
                         </div>
                         <div class="date">
-                            22/10/2020
+                            {{movie.date}}
                         </div>
                         <div class="percent">
                             <div class="percent-light-blue">
                                 <div>
-                                    <p>50%</p>
+                                    <p>{{movie.percent}}%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="text">
-                            Após anos afastado, Thor retorna para casa e descobre que seu pai Odin, rei de Asgard, está desaparecido. Após encontra-lo, ele toma conhecimento de sua irmã mais velha, Hela, a poderosa e implacável deusa da morte. Com o auxílio de Loki, ele enfrenta Hela, mas durante a batalha, Thor acaba preso em Sakaar, um planeta do outro lado do universo. Agora, ele precisa correr contra o tempo para voltar a Asgard e impedir o Ragnarok, a destruição de seu mundo. 
+                            {{movie.text}}
                         </div> 
                         <div class="areas">
-                            <span>Ação</span>
-                            <span>Aventura</span>
+                            {% for area in movie.areas %}
+                                <span>{{area}}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </a>
+           {% endfor %}
+
         </div>
 
         
@@ -72,6 +76,5 @@
         
     </footer>
 
-    <script src="/public/scripts/script.js"></script>
 </body>
 </html>
